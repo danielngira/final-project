@@ -5,6 +5,8 @@ html, body {
   height: 100%;
 }
 
+/*
+Old values
 .room {
   min-height: 100dvh;
   display: flex;
@@ -30,5 +32,56 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+}
+*/
+
+.room {
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+
+  display: grid;
+  grid-template-rows: 55fr 45fr; /* wall / floor split */
+  overflow: hidden;
+}
+
+.wall {
+  background: #d9eff7 url("../assets/checkered-wall.svg") center/cover no-repeat;
+}
+
+.floor {
+  background-color: #fbe1d5; /* prevents any SVG transparency showing white */
+  background-image: url("../assets/floor.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+
+.obj {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.obj img {
+  display: block;
+  width: 100%;
+  height: auto;         
+}
+
+.bed {
+  left: 0%;
+  bottom: 10%;          /* position relative to floor */
+  width: clamp(260px, 42vw, 720px);  /* min, responsive, max */
+}
+
+.lamp {
+  left: 2%;
+  bottom: 28%;
+  width: clamp(90px, 10vw, 160px);
 }
 
