@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+}
+
+.room {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wall {
+  height: 55vh; 
+  width: 100%;
+  background: #d9eff7 url("../assets/checkered-wall.svg") center/cover no-repeat;
+  position: relative; 
+  overflow: hidden;
+}
+
+.floor{
+  position: relative; 
+  display: flex; 
+  height: 70vh;
+  top: 80;
+  width: 100vw;
+  margin-top: -280;
+  background-image: url('../assets/floor.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
