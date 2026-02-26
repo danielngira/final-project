@@ -74,14 +74,17 @@ Old values
 }
 
 .bed {
-  left: 0%;
-  bottom: 10%;          /* position relative to floor */
+  left: 2%;
+  bottom: 20%;          /* position relative to floor */
   width: clamp(260px, 42vw, 720px);  /* min, responsive, max */
+  outline: 2px dashed red;
 }
 
 .lamp {
-  left: 2%;
-  bottom: 28%;
-  width: clamp(90px, 10vw, 160px);
+  left: 0%;
+  bottom: 50%;
+  /*width: clamp(90px, 10vw, 160px);*/
+  height: clamp(50px, 60vh, 160px);
+  z-index: 9;
 }
 
