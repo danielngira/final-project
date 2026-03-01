@@ -100,80 +100,58 @@ body {
 
 .plushie {
   left: 10%;
-  bottom: 45%;
+  bottom: 80%;
   width: calc(300px * var(--s));
   z-index: 11;
 }
 
 .cat {
   left: 20%;
-  bottom: 40%;
+  bottom: 70%;
   width: calc(300px * var(--s));
   z-index: 11;
 }
 
 .nightstand {
-  left: 50%;
-  bottom: 30%;
+  left: 30%;
+  bottom: 70%;
   width: calc(300px * var(--s));
-  z-index: 12;
+  z-index: 9;
 }
 
 .plant {
-  left: 60%;
-  bottom: 30%;
+  left: 40%;
+  bottom: 70%;
   width: calc(300px * var(--s));
   z-index: 12;
 }
 
-.deskCluster{
-  left: 40%;
-  bottom: 30%;
-  width: calc(300px * var(--s));     /* same as your desk width */
-  height: calc(220px * var(--s));    /* “workspace” height above desk */
-  position: absolute;
-  z-index: 11;
-  pointer-events: none;
-}
-
-.deskCluster .item{
-  position: absolute;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-  pointer-events: auto;              /* re-enable clicks */
-}
-
-.deskCluster .desk{
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.deskCluster .computer{
+.desk {
   left: 55%;
-  top: 30%;
-  width: 42%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+  bottom: 50%;
+  width: calc(300px * var(--s));
+  z-index: 12;
 }
 
-.deskCluster .books{
-  left: 38%;
-  top: 32%;
-  width: 18%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+.books {
+  left: 55%;
+  bottom: 95%;
+  width: calc(300px * var(--s));
+  z-index: 12;
 }
 
-.deskCluster .lavaLamp{
-  left: 80%;
-  top: 32%;
-  width: 12%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+.lavalamp {
+  left: 75%;
+  bottom: 95%;
+  width: calc(100px * var(--s));
+  z-index: 12;
+}
+
+.computer{
+  left: 64%;
+  bottom: 95%;
+  width: calc(300px * var(--s));
+  z-index: 12;
 }
 
 .chair {
@@ -186,7 +164,7 @@ body {
 
 .clubs {
   left: 85%;
-  bottom: 40%;
+  bottom: 50%;
   background: transparent;
   width: calc(220px * var(--s));
   z-index: 13;  
