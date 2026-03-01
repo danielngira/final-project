@@ -41,7 +41,8 @@ body {
   z-index: 10;
 }
 
-.obj img {
+.obj img,
+.deskCluster .item img{
   display: block;
   width: 100%;
   height: auto;
@@ -49,7 +50,7 @@ body {
 
 .bed {
   left: 2%;
-  bottom: 20%;
+  bottom: 40%;
   /* position relative to floor */
   width: calc(200px * var(--s));   /* design width */
   /* min, responsive, max */
@@ -57,7 +58,7 @@ body {
 
 .lamp {
   left: 0%;
-  bottom: 30%;
+  bottom: 65%;
   width: calc(220px * var(--s));
   z-index: 9;
 }
@@ -69,18 +70,67 @@ body {
   z-index: 8;
 }
 
-.desk {
-  left: 40%;
-  bottom: 25%;
+.backpack {
+  left: 5%;
+  bottom: 30%;
   width: calc(300px * var(--s));
-  z-index: 8;
+  z-index: 13;
+}
+
+.ball {
+  left: 12%;
+  bottom: 45%;
+  width: calc(300px * var(--s));
+  z-index: 9;
+}
+
+.frame {
+  left: 14%;
+  bottom: 130%;
+  width: calc(300px * var(--s));
+  z-index: 10;
+}
+
+.window {
+  left: 40%;
+  bottom: 130%;
+  width: calc(300px * var(--s));
+  z-index: 10;
+}
+
+.plushie {
+  left: 10%;
+  bottom: 45%;
+  width: calc(300px * var(--s));
+  z-index: 11;
+}
+
+.cat {
+  left: 20%;
+  bottom: 40%;
+  width: calc(300px * var(--s));
+  z-index: 11;
+}
+
+.nightstand {
+  left: 50%;
+  bottom: 30%;
+  width: calc(300px * var(--s));
+  z-index: 12;
+}
+
+.plant {
+  left: 60%;
+  bottom: 30%;
+  width: calc(300px * var(--s));
+  z-index: 12;
 }
 
 .deskCluster{
-  left: 60%;
-  bottom: 25%;
-  width: calc(250px * var(--s));     /* same as your desk width */
-  height: calc(200px * var(--s));    /* “workspace” height above desk */
+  left: 40%;
+  bottom: 30%;
+  width: calc(300px * var(--s));     /* same as your desk width */
+  height: calc(220px * var(--s));    /* “workspace” height above desk */
   position: absolute;
   z-index: 11;
   pointer-events: none;
@@ -128,7 +178,7 @@ body {
 
 .chair {
   left: 60%;
-  bottom: 20%;
+  bottom: 45%;
   background: transparent;
   width: calc(220px * var(--s));
   z-index: 12;  
@@ -136,7 +186,7 @@ body {
 
 .clubs {
   left: 85%;
-  bottom: 20%;
+  bottom: 40%;
   background: transparent;
   width: calc(220px * var(--s));
   z-index: 13;  
