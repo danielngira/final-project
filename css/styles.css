@@ -23,8 +23,8 @@ body {
 }
 
 .floor {
+  position: relative; /*remove if not helpful*/
   background-color: #fbe1d5;
-  /* prevents any SVG transparency showing white */
   background-image: url("../assets/floor.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,10 +70,60 @@ body {
 }
 
 .desk {
+  left: 40%;
+  bottom: 25%;
+  width: calc(300px * var(--s));
+  z-index: 8;
+}
+
+.deskCluster{
   left: 60%;
   bottom: 25%;
-  width: calc(250px * var(--s));
+  width: calc(250px * var(--s));     /* same as your desk width */
+  height: calc(200px * var(--s));    /* “workspace” height above desk */
+  position: absolute;
   z-index: 11;
+  pointer-events: none;
+}
+
+.deskCluster .item{
+  position: absolute;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;              /* re-enable clicks */
+}
+
+.deskCluster .desk{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.deskCluster .computer{
+  left: 55%;
+  top: 30%;
+  width: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.deskCluster .books{
+  left: 38%;
+  top: 32%;
+  width: 18%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.deskCluster .lavaLamp{
+  left: 80%;
+  top: 32%;
+  width: 12%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .chair {
@@ -82,4 +132,12 @@ body {
   background: transparent;
   width: calc(220px * var(--s));
   z-index: 12;  
+}
+
+.clubs {
+  left: 85%;
+  bottom: 20%;
+  background: transparent;
+  width: calc(220px * var(--s));
+  z-index: 13;  
 }
