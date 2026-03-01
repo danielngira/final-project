@@ -19,11 +19,12 @@ body {
 }
 
 .wall {
+  position: relative;
   background: #d9eff7 url("../assets/checkered-wall.svg") center/cover no-repeat;
 }
 
 .floor {
-  position: relative; /*remove if not helpful*/
+  position: relative; 
   background-color: #fbe1d5;
   background-image: url("../assets/floor.svg");
   background-repeat: no-repeat;
@@ -41,8 +42,7 @@ body {
   z-index: 10;
 }
 
-.obj img,
-.deskCluster .item img{
+.obj img {
   display: block;
   width: 100%;
   height: auto;
@@ -51,9 +51,7 @@ body {
 .bed {
   left: 2%;
   bottom: 40%;
-  /* position relative to floor */
-  width: calc(200px * var(--s));   /* design width */
-  /* min, responsive, max */
+  width: calc(200px * var(--s));   
 }
 
 .lamp {
@@ -86,14 +84,14 @@ body {
 
 .frame {
   left: 14%;
-  bottom: 130%;
+  top: 30%;
   width: calc(300px * var(--s));
   z-index: 10;
 }
 
 .window {
   left: 40%;
-  bottom: 130%;
+  top: 30%;
   width: calc(300px * var(--s));
   z-index: 10;
 }
